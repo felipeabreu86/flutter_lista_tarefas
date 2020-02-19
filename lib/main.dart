@@ -22,10 +22,11 @@ class _HomeState extends State<Home> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Lista de tarefas"),
+          centerTitle: false,
+          title: Text("Lista de Tarefas"),
         ),
         body: Container(),
-        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+        floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.purple,
           foregroundColor: Colors.white,
@@ -33,6 +34,7 @@ class _HomeState extends State<Home> {
           child: Icon(Icons.add),
         ),
         bottomNavigationBar: BottomAppBar(
+          shape: CircularNotchedRectangle(),
           child: Row(
             children: <Widget>[
               IconButton(
