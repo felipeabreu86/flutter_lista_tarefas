@@ -172,7 +172,10 @@ class _HomeState extends State<Home> {
                   actions: <Widget>[
                     FlatButton(
                       child: Text("Cancelar"),
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () {
+                        _controllerTarefa.text = "";
+                        Navigator.pop(context);
+                      },
                     ),
                     FlatButton(
                       child: Text("Salvar"),
